@@ -1,0 +1,64 @@
+.main {
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor tipo rejilla */
+.itemList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 80px; /* Espacio para que el footer no tape nada */
+}
+
+/* Tarjeta individual del Item */
+.listItem {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.listItem:hover {
+    transform: translateY(-5px);
+    border-color: #ff5350; /* Color temático Pokemon */
+}
+
+/* Imagen del objeto */
+.listItemIcon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Texto del nombre */
+.listItemText {
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Efecto/Descripción (Opcional si quieres mostrarlo en pequeño) */
+.itemEffect {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
