@@ -14,7 +14,7 @@ function Header({ query, setQuery }: HeaderProps) {
         const path = location.pathname;
         
         if (path.includes('/items')) return "Search an Item...";
-        if (path.includes('/map')) return "Search a Location...";
+        if (path.includes('/location')) return "Search a Location...";
         
         // Default para la página principal / pokemons
         return "Search a Pokemon...";
