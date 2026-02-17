@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { fetchRegions } from '../api/fetchLocations';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import styles from './items.module.css'; // Reutilizamos el grid para consistencia
+import styles from './items.module.css'; 
 
 const MapPage = () => {
     const [regions, setRegions] = useState<any[]>([]);
